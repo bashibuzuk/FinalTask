@@ -25,3 +25,16 @@ string ReadDataString(string message)
     Console.Write(message);
     return Console.ReadLine() ?? "0";
 }
+
+//метод создания массива с клавиатуры
+string[]NewMassive(int LengthMassive)
+{
+    string[]arr = new string[LengthMassive];
+    for (int i = 0; i < LengthMassive; i++)
+    {
+        arr[i] = ReadDataString($"Введите значение {i+1}: ");
+    }
+    return arr;
+
+}
+
