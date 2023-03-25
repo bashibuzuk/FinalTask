@@ -38,3 +38,17 @@ string[]NewMassive(int LengthMassive)
 
 }
 
+//метод формирования массива со значениями меньше или равно 3
+string[]Result(string[]massive)
+{
+    string[]arr = new string[0];
+    for (int i = 0; i < massive.Length; i++)
+    {
+        if (massive[i].Length <= 3)
+        {
+            arr = arr.Concat(new string[] { massive[i] }).ToArray();
+        }
+    }
+    return arr;
+}
+
