@@ -52,3 +52,19 @@ string[]Result(string[]massive)
     return arr;
 }
 
+//печать массива
+void Print1DArr(string[] arr)
+{
+
+    for (int i = 0; i < arr.GetLength(0); i++)
+    {
+        Console.Write($"{arr[i]},\t");
+    }
+}
+
+
+int LengthMassive = Read2Data("Задайте длинну массива"); // задать длинну массива
+string[]array = NewMassive(LengthMassive);               // запись значений в массив
+
+Print1DArr(Result(array));                               // печать массива со значениями меньше или равно 3
+Console.WriteLine();
